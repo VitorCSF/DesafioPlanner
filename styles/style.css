@@ -2,6 +2,7 @@
     --cor-cinza-claro: #E5E5E5;
     --cor-salvar: #2CBE82;
     --cor-excluir: #DA2B40;
+    --cor-preto-transparente: #3B3E45;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     /* border-bottom-left-radius: 35px; // Borda inferior à esquerda
     border-bottom-right-radius: 35px; // // Borda inferior à direita */
     padding: 1.5em 0;
-    box-shadow: 0px 7px #A8A8A809;
+    box-shadow: 0px 9px #A8A8A809;
 }
 
 .texto__cabecalho {
@@ -49,13 +50,13 @@ body {
     padding-right: 10em;
 }
 
-.botao__mais {
+.botao__salvar {
     margin-right: .7em;
     background-color: var(--cor-salvar);
     border-color: var(--cor-salvar);
 }
 
-.botao__menos {
+.botao__excluir {
     background-color: var(--cor-excluir);
     border-color: var(--cor-excluir);
 }
@@ -72,4 +73,84 @@ body {
 
 .dia__cabecalho {
     font-size: 20px;
+}
+
+.container__atividades {
+
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.borda__atividades-descricao {
+    border: 1px solid var(--cor-salvar);
+    border-radius: 7px;
+    outline: none;
+
+}
+
+.borda__atividades {
+
+    border: 1px solid var(--cor-salvar);
+    outline: none;
+
+}
+    
+.descricao__atividade {
+    font-size: 14px;
+    width: 27.5vw;
+    color: var(--cor-preto-transparente);
+    margin-left: 3.5em;
+}
+
+.tamanho__input {
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    padding-left: 4em;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+    padding-left: 4em;
+  }
+  ::-moz-placeholder {
+    font-size: 14px;
+    padding-left: 4em;
+  }
+  :-ms-input-placeholder {
+    font-size: 14px;
+    padding-left: 4em;
+  }
+  :-moz-placeholder {
+    font-size: 14px;
+    padding-left: 4em;
+  }
+
+.select__dia {
+
+    font-size: 14px;
+    width: 13vw;
+    color: var(--cor-preto-transparente);
+    margin-left: 1.5em;
+    margin-right: 1.8em;
+    
+}
+
+.select__horario {
+
+    font-size: 14px;
+
+}
+
+.botoes__atividade {
+
+    margin-left: 1.8em;
+}
+
+.botao__adicionar-atividade {
+
+    margin-right: 1.8em;
 }
