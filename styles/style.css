@@ -62,7 +62,7 @@ body {
     background-color: #6688FF;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: .5em 19em 0 .5em; 
+    padding: .5em 20em 0 .5em; 
 
 }
 
@@ -135,6 +135,14 @@ body {
 
 }
 
+/* Estilo do Formulário de Atividades */
+
+.custom__form-atividades {
+
+    display: flex;
+
+}
+
 /* Estilo do Container da Inserção de Atividades */
 
 .container__atividades {
@@ -165,7 +173,7 @@ body {
 .descricao__atividade {
 
     font-size: 14px;
-    width: 27.5vw;
+    width: 32.3vw;
     color: var(--cor-preto-transparente);
     margin-left: 3.5em;
 
@@ -288,7 +296,7 @@ body {
     border: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding: .1em 0.5em;
+    padding: .1em 1em;
     margin-right: 1.3em;
 
 }
@@ -484,5 +492,19 @@ body {
 #botao-dom:hover {
 
     background-color: var(--cor-de-fundo-vermelha);
-    
+
+}
+
+/* Ajustando imagem da Compass */
+
+.logo__compasso {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width:400px;
+    max-height:450px;
+    width: auto;
+    height: auto;
+
 }
