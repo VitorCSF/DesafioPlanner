@@ -1,4 +1,7 @@
+/* Variáveis raiz da aplicação */
+
 :root {
+
     --cor-cinza-claro: #E5E5E5;
     --cor-salvar: #2CBE82;
     --cor-excluir: #DA2B40;
@@ -21,14 +24,22 @@
     --cor-de-fundo-rosa-escuro: #FF1493;
     --cor-de-fundo-vermelha: #FF0000;
     --cor-preta: #000000;
+
 }
+
+/* Estilo padrão do Body */
 
 body {
+
     font-size: 16px;
     font-weight: 400;
+
 }
 
+/* Estilo do container do Cabeçalho */
+
 .container__cabecalho {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,53 +50,75 @@ body {
     border-bottom-right-radius: 35px; // // Contorno inferior à direita */
     padding: 1.5em 0;
     box-shadow: 0px 9px #A8A8A809;
+
 }
 
+/* Estilo da Seção: Texto do Cabeçalho (texto__cabecalho)*/
+
 .texto__cabecalho {
+
     font-family: 'Poppins', sans-serif;
     border: 1px solid #6688FF;
     background-color: #6688FF;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: .5em 19em 0 .5em; 
+
 }
 
 .titulo__cabecalho {
+
     font-size: 22px;
     color: #FFFFFF;
     font-weight: bold;
+
 }
 
 .paragrafo__cabecalho {
+
     font-size: 14px;
     color: #FFFFFF;
+
 }
 
+/* Estilo da Seção: Botões do Cabeçalho (botoes__cabecalho */
+
 .botoes__cabecalho {
+
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
     padding-left: 2.5em;
     padding-right: 10em;
+
 }
 
 .botao__salvar {
+
     margin-right: .7em;
     background-color: var(--cor-salvar);
     border-color: var(--cor-salvar);
+
 }
 
 .botao__excluir {
+
     background-color: var(--cor-excluir);
     border-color: var(--cor-excluir);
+
 }
 
+/* Estilo da Seção: Data do Cabeçalho (data__cabecalho) */
+
 .data__cabecalho {
+
     font-family: 'Poppins', sans-serif;
     padding-right: 2em;
     text-align: center;
+
 }
 
 #hora__cabecalho {
+
     font-size: 40px;
     color: var(--cor-preta);
     outline: none;
@@ -93,20 +126,29 @@ body {
     text-align: center;
     background-color: var(--cor-branca);
     border: 1px solid var(--cor-branca);
+
 }
 
 #dia__cabecalho {
+
     font-size: 20px;
+
 }
+
+/* Estilo do Container da Inserção de Atividades */
 
 .container__atividades {
 
     display: flex;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+
 }
 
+/* Estilos do Campo de Digitar "Atividade" */
+
 .borda__atividades-descricao {
+
     border: 1px solid var(--cor-salvar);
     border-radius: 7px;
     outline: none;
@@ -121,41 +163,64 @@ body {
 }
     
 .descricao__atividade {
+
     font-size: 14px;
     width: 27.5vw;
     color: var(--cor-preto-transparente);
     margin-left: 3.5em;
+
 }
 
+/* Estilo geral dos Inputs */
+
 .input {
+
     outline: none;
+    
 }
 
 .tamanho__input {
+
     font-size: 14px;
+
 }
 
 ::-webkit-input-placeholder {
+
     font-size: 14px;
     padding-left: 4em;
+
   }
 
   ::-webkit-input-placeholder {
+
     font-size: 14px;
     padding-left: 4em;
+
   }
+
   ::-moz-placeholder {
+
     font-size: 14px;
     padding-left: 4em;
+
   }
+
   :-ms-input-placeholder {
+
     font-size: 14px;
     padding-left: 4em;
+
   }
+
   :-moz-placeholder {
+
     font-size: 14px;
     padding-left: 4em;
+
   }
+
+/* Estilo da Seção: Horário da Atividade (horario__atividade) */  
 
 .select__dia {
 
@@ -173,32 +238,46 @@ body {
 
 }
 
+/* Estilo da Seção: Botão da Atividade (botoes__atividade) */
+
 .botoes__atividade {
 
     margin-left: 1.8em;
+
 }
 
 .botao__adicionar-atividade {
 
     margin-right: 1.8em;
+
 }
 
+/* Estilo do Container, Borda e Texto dos Botões da Semana */
+
 .container__botoes__horario-semana {
+
     display: flex;
     align-items: center;
+
 }
 
 .borda-horario {
+
     background-color: var(--cor-branca);
     border-radius: 10px;
     padding: 1.3em .6em;
     margin: 5em 1em;
     box-shadow: 2px 4px #A8A8A809;
+
 }
 
 .texto-horario {
+
     font-size: 17px;
+
 }
+
+/* Estilo dos Botões Semanais */
 
 .botao__segunda {
 
@@ -298,78 +377,112 @@ body {
 
 }
 
+/* Estilo dos Botões ao clicá-los com o mouse*/
+
 #botao-seg:active {
+
     padding-top: .3em;
     padding-left: 3.5em;
     padding-right: 3.5em;
+
 }
 
 #botao-ter:active {
+
     padding-top: .3em;
     padding-left: 3.5em;
     padding-right: 3.5em;
+
 }
 
 #botao-qua:active {
+
     padding-top: .3em;
     padding-left: 4em;
     padding-right: 4em;
+
 }
 
 #botao-qui:active {
+
     padding-top: .3em;
     padding-left: 4em;
     padding-right: 4em;
+
 }
 
 #botao-sex:active {
+
     padding-top: .3em;
     padding-left: 4em;
     padding-right: 4em;
+
 }
 
 #botao-sab:active {
+
     padding-top: .3em;
     padding-left: 3.5em;
     padding-right: 3.5em;
+
 }
 
 #botao-dom:active {
+
     padding-top: .3em;
     padding-left: 3.5em;
     padding-right: 3.5em;
+
 }
 
 #botao-seg:active {
+
     padding-top: .3em;
     padding-left: 3.5em;
     padding-right: 3.5em;
+
 }
 
+/* Estilo dos Botões ao passar por cima com o mouse */
+
 #botao-seg:hover {
+
     background-color: var(--cor-de-fundo-laranja);
+
 }
 
 #botao-ter:hover {
+
     background-color: var(--cor-de-fundo-verde);
+
 }
 
 #botao-qua:hover {
+
     background-color: var(--cor-de-fundo-azul);
+
 }
 
 #botao-qui:hover {
+
     background-color: var(--cor-de-fundo-roxo);
+
 }
 
 #botao-sex:hover {
+
     background-color: var(--cor-de-fundo-azul-escuro);
+
 }
 
 #botao-sab:hover {
+
     background-color: var(--cor-de-fundo-rosa-escuro);
+
 }
 
 #botao-dom:hover {
+
     background-color: var(--cor-de-fundo-vermelha);
+    
 }

@@ -6,21 +6,22 @@ function mostraHora() {
 
     // Guarda cada pedaço em uma variável
 
-    var hora = data.getHours(); // 0-23
-    var min = data.getMinutes(); // 0-59
+    var hora = data.getHours(); // 00-23
+    var min = data.getMinutes(); // 00-59
+
+    // Adiciona um '0' à esquerda para minutos de 0 a 10
 
     if (min < 10) {
 
-        min = '0' + min;
+        min = '0' + min;  
 
     }
-
 
     // Formata a hora
 
     var str_hora = hora + ':' + min;
 
-    // Mostra o resultado
+    // Mostra o resultado de str_hora
 
     document.getElementById("hora__cabecalho").value=str_hora;
 
@@ -29,7 +30,6 @@ function mostraHora() {
 // Intervalo para a função mostraHora     
 
     var timer=setInterval(mostraHora,1000);
-
 
 //Função para mostra o dia, mês e ano
 
@@ -41,15 +41,16 @@ function mostraHora() {
 
     var dia = data.getDate(); // Guarda o dia 
 
-    var mes = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto','Setembro','Outubro','Novembro','Dezembro');
+    var mes = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto','Setembro','Outubro','Novembro','Dezembro'); // Converte o valor do mês em String
 
     var ano = data.getFullYear(); // Guarda o ano
 
-    // Formata a data e a hora (note o mês + 1)
+    // Formata o dia, mês e ano 
 
     var str_data = dia + ' de ' + mes[data.getMonth()] + ' de ' + ano;
 
-    // Mostra o resultado
+    // Mostra o resultado de str_data
+
     document.write(str_data);
 
 }

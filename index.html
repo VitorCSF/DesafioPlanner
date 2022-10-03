@@ -32,8 +32,8 @@
             
             <section class="botoes__cabecalho">
 
-                <button type="button" class="btn btn-success botao__salvar"> Salvar localStorage</button>
-                <button type="button" class="btn btn-danger botao__excluir"> Excluir localStorage</button>
+                <button type="submit" class="btn btn-success botao__salvar" value="salvar__local-storage"> Salvar localStorage</button>
+                <button type="button" class="btn btn-danger botao__excluir" value="excluir__local-storage"> Excluir localStorage</button>
 
             </section>
 
@@ -73,91 +73,104 @@
 
             <div class="container__atividades pt-4 mb-4">
 
-                <article class="input-group descricao__atividade borda__atividades-descricao">
-                    
-                    <input type="text" class="form-control tamanho__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Atividade">
+                <form action="">
 
-                </article>
+                    <article class="input-group descricao__atividade borda__atividades-descricao">
+                        
+                        <input type="text" class="form-control tamanho__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Atividade">
 
-                <section class="dia__atividade">
+                    </article>
 
-                    <select class="form-select select__dia borda__atividades" aria-label="Default select example">
+                    <section class="dia__atividade">
 
-                        <option selected>Segunda-feira</option>
-                        <option value="1">Terça-feira</option>
-                        <option value="2">Quarta-feira</option>
-                        <option value="3">Quinta-feira</option>
-                        <option value="3">Sexta-feira</option>
-                        <option value="3">Sábado</option>
-                        <option value="3">Domingo</option>
+                        <select class="form-select select__dia borda__atividades" aria-label="Default select example">
 
-                    </select>
+                            <option selected value="seg">Segunda-feira</option>
+                            <option value="ter">Terça-feira</option>
+                            <option value="qua">Quarta-feira</option>
+                            <option value="qui">Quinta-feira</option>
+                            <option value="sex">Sexta-feira</option>
+                            <option value="sab">Sábado</option>
+                            <option value="dom">Domingo</option>
 
-                </section>
+                        </select>
 
-                <section class="horario__atividade">
+                    </section>
 
-                    <select class="form-select select__horario borda__atividades" aria-label="Default select example">
+                    <section class="horario__atividade">
 
-                        <option selected>00h00m</option>
-                        <option value="1">00h30m</option>
-                        <option value="2">01h00m</option>
-                        <option value="3">01h30m</option>
-                        <option value="4">02h00m</option>
-                        <option value="5">02h30m</option>
-                        <option value="6">03h00m</option>
-                        <option value="7">03h30m</option>
-                        <option value="8">04h00m</option>
-                        <option value="9">04h30m</option>
-                        <option value="10">05h00m</option>
-                        <option value="11">05h30m</option>
-                        <option value="12">06h00m</option>
-                        <option value="13">06h30m</option>
-                        <option value="14">07h00m</option>
-                        <option value="15">07h30m</option>
-                        <option value="16">08h00m</option>
-                        <option value="17">08h30m</option>
-                        <option value="18">09h00m</option>
-                        <option value="19">09h30m</option>
-                        <option value="20">10h00m</option>
-                        <option value="21">10h30m</option>
-                        <option value="22">11h00m</option>
-                        <option value="23">11h30m</option>
-                        <option value="24">12h00m</option>
-                        <option value="25">12h30m</option>
-                        <option value="26">13h00m</option>
-                        <option value="27">13h30m</option>
-                        <option value="28">14h00m</option>
-                        <option value="29">14h30m</option>
-                        <option value="30">15h00m</option>
-                        <option value="31">15h30m</option>
-                        <option value="32">16h00m</option>
-                        <option value="33">16h30m</option>
-                        <option value="34">17h00m</option>
-                        <option value="35">17h30m</option>
-                        <option value="36">18h00m</option>
-                        <option value="37">18h30m</option>
-                        <option value="38">19h00m</option>
-                        <option value="39">19h30m</option>
-                        <option value="40">20h00m</option>
-                        <option value="41">20h30m</option>
-                        <option value="42">21h00m</option>
-                        <option value="43">21h30m</option>
-                        <option value="44">22h00m</option>
-                        <option value="45">22h30m</option>
-                        <option value="46">23h00m</option>
-                        <option value="47">23h30m</option>
+                        <select class="form-select select__horario borda__atividades" aria-label="Default select example">
 
-                    </select>
+                            <option selected value="00-00">00h00m</option>
+                            <option value="00-30">00h30m</option>
+                            <option value="01-00">01h00m</option>
+                            <option value="01-30">01h30m</option>
+                            <option value="02-00">02h00m</option>
+                            <option value="02-30">02h30m</option>
+                            <option value="03-00">03h00m</option>
+                            <option value="03-30">03h30m</option>
+                            <option value="04-00">04h00m</option>
+                            <option value="04-30">04h30m</option>
+                            <option value="05-00">05h00m</option>
+                            <option value="05-30">05h30m</option>
+                            <option value="06-00">06h00m</option>
+                            <option value="06-30">06h30m</option>
+                            <option value="07-00">07h00m</option>
+                            <option value="07-30">07h30m</option>
+                            <option value="08-00">08h00m</option>
+                            <option value="08-30">08h30m</option>
+                            <option value="09-00">09h00m</option>
+                            <option value="09-30">09h30m</option>
+                            <option value="10-00">10h00m</option>
+                            <option value="10-30">10h30m</option>
+                            <option value="11-00">11h00m</option>
+                            <option value="11-30">11h30m</option>
+                            <option value="12-00">12h00m</option>
+                            <option value="12-30">12h30m</option>
+                            <option value="13-00">13h00m</option>
+                            <option value="13-30">13h30m</option>
+                            <option value="14-00">14h00m</option>
+                            <option value="14-30">14h30m</option>
+                            <option value="15-00">15h00m</option>
+                            <option value="15-30">15h30m</option>
+                            <option value="16-00">16h00m</option>
+                            <option value="16-30">16h30m</option>
+                            <option value="17-00">17h00m</option>
+                            <option value="17-30">17h30m</option>
+                            <option value="18-00">18h00m</option>
+                            <option value="18-30">18h30m</option>
+                            <option value="19-00">19h00m</option>
+                            <option value="19-30">19h30m</option>
+                            <option value="20-00">20h00m</option>
+                            <option value="20-30">20h30m</option>
+                            <option value="21-00">21h00m</option>
+                            <option value="21-30">21h30m</option>
+                            <option value="22-00">22h00m</option>
+                            <option value="22-30">22h30m</option>
+                            <option value="23-00">23h00m</option>
+                            <option value="23-30">23h30m</option>
 
-                </section>
+                        </select>
 
-                <section class="botoes__atividade">
+                    </section>
 
-                    <button type="button" class="btn btn-success botao__salvar botao__adicionar-atividade"><img src="./img/sinal_mais.svg" alt="Sinal de +">  Adicionar Atividade</button>
-                    <button type="button" class="btn btn-danger botao__excluir botao__excluir-atividade"><img src="./img/sinal_menos.svg" alt="Sinal de -">  Excluir Todos</button>
+                    <section class="botoes__atividade">
 
-                </section>
+                        <button type="submit" class="btn btn-success botao__salvar botao__adicionar-atividade" value="adicionar__atividade">
+
+                            <img src="./img/sinal_mais.svg" alt="Sinal de +">  Adicionar Atividade
+                        
+                        </button>
+                        
+                        <button type="button" class="btn btn-danger botao__excluir botao__excluir-atividade">
+                            
+                            <img src="excluir__todas-atividades" alt="Sinal de -">  Excluir Todos
+                        
+                        </button>
+
+                    </section>
+                
+                </form>    
 
             </div>
 
@@ -175,13 +188,13 @@
 
                 <div class="botoes__semana pb-2">
 
-                    <input class="btn btn-secondary botao__segunda" id="botao-seg" id="cor-borda-seg" type="button" value="Segunda-feira">
-                    <input class="btn btn-secondary botao__terca" id="botao-ter" type="button" value="Terça-feira">
-                    <input class="btn btn-secondary botao__quarta" id="botao-qua" type="button" value="Quarta-feira">
-                    <input class="btn btn-secondary botao__quinta" id="botao-qui" type="button" value="Quinta-feira">
-                    <input class="btn btn-secondary botao__sexta" id="botao-sex" type="button" value="Sexta-feira">
-                    <input class="btn btn-secondary botao__sabado" id="botao-sab" type="button" value="Sábado">
-                    <input class="btn btn-secondary botao__domingo" id="botao-dom" type="button" value="Domingo">
+                    <input class="btn btn-secondary botao__segunda" id="botao-seg" type="button" value="segunda-feira">
+                    <input class="btn btn-secondary botao__terca" id="botao-ter" type="button" value="terça-feira">
+                    <input class="btn btn-secondary botao__quarta" id="botao-qua" type="button" value="quarta-feira">
+                    <input class="btn btn-secondary botao__quinta" id="botao-qui" type="button" value="quinta-feira">
+                    <input class="btn btn-secondary botao__sexta" id="botao-sex" type="button" value="sexta-feira">
+                    <input class="btn btn-secondary botao__sabado" id="botao-sab" type="button" value="sabado">
+                    <input class="btn btn-secondary botao__domingo" id="botao-dom" type="button" value="domingo">
 
                 </div>
 
