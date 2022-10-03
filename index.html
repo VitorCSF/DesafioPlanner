@@ -39,17 +39,25 @@
 
             <section class="data__cabecalho">
 
-                    <time class="hora__cabecalho">
+                    <input type="text" id="hora__cabecalho" disabled>
 
-                        <script>mostraHora()</script>
+                        <script>
+                            
+                            mostraHora()  
+                        
+                        </script>
 
-                    </time>
+                    </input>
 
                     <br>
 
-                    <time class="dia__cabecalho">
+                    <time id="dia__cabecalho">
 
-                        <script>mostraDia()</script>
+                        <script>
+                        
+                            mostraDia();
+                        
+                        </script>
 
                     </time>            
 
@@ -167,17 +175,17 @@
 
                 <div class="botoes__semana pb-2">
 
-                    <input class="btn btn-secondary botao__segunda" type="button" value="Segunda-feira">
-                    <input class="btn btn-secondary botao__terca" type="button" value="Terça-feira">
-                    <input class="btn btn-secondary botao__quarta" type="button" value="Quarta-feira">
-                    <input class="btn btn-secondary botao__quinta" type="button" value="Quinta-feira">
-                    <input class="btn btn-secondary botao__sexta" type="button" value="Sexta-feira">
-                    <input class="btn btn-secondary botao__sabado" type="button" value="Sábado">
-                    <input class="btn btn-secondary botao__domingo" type="button" value="Domingo">
+                    <input class="btn btn-secondary botao__segunda" id="botao-seg" id="cor-borda-seg" type="button" value="Segunda-feira">
+                    <input class="btn btn-secondary botao__terca" id="botao-ter" type="button" value="Terça-feira">
+                    <input class="btn btn-secondary botao__quarta" id="botao-qua" type="button" value="Quarta-feira">
+                    <input class="btn btn-secondary botao__quinta" id="botao-qui" type="button" value="Quinta-feira">
+                    <input class="btn btn-secondary botao__sexta" id="botao-sex" type="button" value="Sexta-feira">
+                    <input class="btn btn-secondary botao__sabado" id="botao-sab" type="button" value="Sábado">
+                    <input class="btn btn-secondary botao__domingo" id="botao-dom" type="button" value="Domingo">
 
                 </div>
 
-            </div>    
+            </div>
 
         </section>
 

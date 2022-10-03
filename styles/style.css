@@ -13,6 +13,14 @@
     --cor-vermelho-claro: #FF6666;
     --cor-alerta: #F55D5D;
     --cor-linha-alerta: #FF6D6D;
+    --cor-de-fundo-laranja: #FF8C00;
+    --cor-de-fundo-verde: #008000;
+    --cor-de-fundo-azul: #0000CD;
+    --cor-de-fundo-roxo: #9400D3;
+    --cor-de-fundo-azul-escuro: #4169E1;
+    --cor-de-fundo-rosa-escuro: #FF1493;
+    --cor-de-fundo-vermelha: #FF0000;
+    --cor-preta: #000000;
 }
 
 body {
@@ -77,11 +85,17 @@ body {
     text-align: center;
 }
 
-.hora__cabecalho {
+#hora__cabecalho {
     font-size: 40px;
+    color: var(--cor-preta);
+    outline: none;
+    width: 7vw;
+    text-align: center;
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-branca);
 }
 
-.dia__cabecalho {
+#dia__cabecalho {
     font-size: 20px;
 }
 
@@ -111,6 +125,10 @@ body {
     width: 27.5vw;
     color: var(--cor-preto-transparente);
     margin-left: 3.5em;
+}
+
+.input {
+    outline: none;
 }
 
 .tamanho__input {
@@ -278,4 +296,80 @@ body {
     padding: .1em 2em;
     margin-right: 1.3em;
 
+}
+
+#botao-seg:active {
+    padding-top: .3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+#botao-ter:active {
+    padding-top: .3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+#botao-qua:active {
+    padding-top: .3em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#botao-qui:active {
+    padding-top: .3em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#botao-sex:active {
+    padding-top: .3em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#botao-sab:active {
+    padding-top: .3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+#botao-dom:active {
+    padding-top: .3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+#botao-seg:active {
+    padding-top: .3em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+#botao-seg:hover {
+    background-color: var(--cor-de-fundo-laranja);
+}
+
+#botao-ter:hover {
+    background-color: var(--cor-de-fundo-verde);
+}
+
+#botao-qua:hover {
+    background-color: var(--cor-de-fundo-azul);
+}
+
+#botao-qui:hover {
+    background-color: var(--cor-de-fundo-roxo);
+}
+
+#botao-sex:hover {
+    background-color: var(--cor-de-fundo-azul-escuro);
+}
+
+#botao-sab:hover {
+    background-color: var(--cor-de-fundo-rosa-escuro);
+}
+
+#botao-dom:hover {
+    background-color: var(--cor-de-fundo-vermelha);
 }
