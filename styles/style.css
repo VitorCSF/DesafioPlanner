@@ -502,9 +502,61 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    max-width:400px;
+    max-width:370px;
     max-height:450px;
     width: auto;
     height: auto;
 
 }
+
+/* Scroll Vertical */
+
+.scroll__vertical {
+    
+    overflow-y: scroll;
+    position: absolute;
+    right: 4vw;
+    width: 88.9vw;
+    height: 30vw;
+    z-index: 1;
+    
+}
+
+/* Scroll Horizontal */
+
+.scroll__horizontal {
+    
+    overflow-x: scroll;
+    transform: rotateX(180deg);
+    
+} 
+
+.conteudo-principal {
+    transform: rotateX(180deg);
+    width: 100vw;
+    height: 100vw;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-color: #c7c7c7 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 7.5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--cor-branca);
+    border-radius: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--cor-cinza-claro);
+    border-radius: 30px;
+    border: 1px solid var(--cor-branca);
+  }
+  
