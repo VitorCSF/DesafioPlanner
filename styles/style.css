@@ -155,14 +155,6 @@ body {
 
 /* Estilos do Campo de Digitar "Atividade" */
 
-.borda__atividades-descricao {
-
-    border: 1px solid var(--cor-salvar);
-    border-radius: 7px;
-    outline: none;
-
-}
-
 .borda__atividades {
 
     border: 1px solid var(--cor-salvar);
@@ -243,6 +235,22 @@ body {
 .select__horario {
 
     font-size: 14px;
+
+}
+
+.fonte-relogio {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+
+}
+
+/* Estilo geral dos Formulários */
+
+.form-control {
+
+    
+    border-color: var(--cor-verde-claro);
 
 }
 
@@ -529,9 +537,11 @@ body {
     overflow-x: scroll;
     transform: rotateX(180deg);
     
-} 
+}
 
-.conteudo-principal {
+/* Conteúdo dentro dos Scrolls */
+
+.conteudo__principal {
     transform: rotateX(180deg);
     width: 100vw;
     height: 100vw;
@@ -559,4 +569,3 @@ body {
     border-radius: 30px;
     border: 1px solid var(--cor-branca);
   }
-  
